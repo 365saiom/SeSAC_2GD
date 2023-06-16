@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 적용방법</title>
+    <link rel="stylesheet" href="./style01.css" />
+    <style>
+      p {
+        background-color: violet;
+        color: aliceblue;
+      }
+      /*
+        색깔 지정방법 3가지
+        1. 색깔 이름: red, pink, aliceblue, ...
+        2. rgb(숫자1, 숫자2, 숫자3)
+         - 숫자 1,2,3은 256개의 수로 이루어져 있습니다. (0~255)
+        3. #------ 여섯자리 숫자를 쓰면 됩니다.
+            단, 16진수로 이루어진 숫자
+            16진수 0~9, a, b, c, d, e, f(15)
+      */
+      div {
+        background-color: red;
+      }
+
+      h2 {
+        background-color: violet;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>css style 적용 방법 3가지</h1>
+    <div style="background-color: aqua">인라인 방식</div>
+    <p>내장 스타일 태그 방식</p>
+    <ul>
+      <li>외부 스타일 태그</li>
+      <li>방식</li>
+    </ul>
+    <h2>내장 스타일 vs. link 방식 h2</h2>
+  </body>
+</html>
