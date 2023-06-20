@@ -5,37 +5,78 @@
     background-color: skyblue;
     line-height: 100px;
 }
-
-/* 가상 클래스 선택자 
+/* 가상 클래스 선택자
 - hover, active, visited, focus, checked
     - E:hover{} : 요소에 마우스가 올라가 있는 동안
-    - E:active{} : 요소에 마우스 클릭 or 엔터가 눌리는 동안
+    - E:active{} : 요소에 마우스클릭 or 엔터가 눌리는 동안
     - E:focus{} : 요소에 포커스가 머물러 있는 동안
     - E:visited{} : 요소가 링크일 때, 방문했다면 스타일 변경(a태그)
     - E:checked{} : 요소가 체크되었을 때(radio / checkbox)
 */
-
-.div1:hover{
+.div1:hover {
     background-color: yellow;
     height: 150px;
 }
 .div1:active{
     background-color: orange;
-    width:150px;
+    width: 150px;
 }
-
 input:focus{
     background-color: blueviolet;
-    color:#fff;
+    color: #fff;
     outline-color: aqua;
-    /* outline-color는 input에만 적용이 된다.  */
 }
-
-a:visited{
+a:visited {
     color: #ccc;
 }
-
-input#rabbit:checked + label{
+input#rabbit:checked + label {
     background-color: pink;
-    color:#fff;
+    color: white;
 }
+/*
+    - E:first-child {} : E가 첫번째 자식이라면 선택
+    - E:last-child {} : E가 마지막 자식이라면 선택
+    - E:nth-child(n){} : E가 n번째 자식이라면 선택
+    - E:nth-of-type(n){} :E요소 중에 n번째를 선택
+    - E:not(XYZ){} : XYZ가 아닌 E요소를 선택
+*/
+.zoo > * {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+}
+.zoo > li:last-child{
+    background-color: black;
+}
+.zoo> li:first-child{
+    background-color: yellow;
+}
+.zoo> li:nth-of-type(1){
+    background-color: blue;
+}
+.zoo > *:first-child{
+    background-color: yellowgreen;
+}
+.zoo > li:nth-child(2n+1){
+    background-color: pink;
+}
+.zoo *:not(li){
+    background-color:red;
+}
+/* 가상 요소 선택자 */
+/* ::after, ::before
+*/
+.h3{
+    background-color: yellow;
+}
+.h3::after{
+    content: " after";
+    color: #888;
+}
+.h3::before{
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 50px;
+    background-color: red;
+} 

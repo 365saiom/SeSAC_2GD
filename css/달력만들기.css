@@ -1,0 +1,25 @@
+body{
+    background-color: beige;
+}
+
+h1{
+    text-align: center;
+    color:green;
+}
+
+table tr td{
+    text-align: right;
+
+}
+
+table tr td:first-child, table tr th:first-child, table tr td.holiday{
+    color:red;
+}
+
+table tr td:last-child, table tr th:last-child{
+    color:blue;
+}
+
+table tr:first-child td{
+    text-align: center;
+}

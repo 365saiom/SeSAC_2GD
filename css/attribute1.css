@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+@font-face {
+    font-family: 'KyoboHandwriting2022khn';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KyoboHandwriting2022khn.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-link{
+    font-family:'Diphylleia',serif;
+}
+.font-import{
+    font-family: 'Nanum Pen Script', cursive;
+}
+.noonnu-font{
+    font-family: 'KyoboHandwriting2022khn';
+}
+
+.practice{
+    font-family:'Diphylleia','KyoboHandwriting2022khn',serif;
+}
+
+.container{
+    width:500px;
+    background-color: aliceblue;
+}
+
+.sentences{
+    font-weight: 400;
+    font-size:1em;
+    text-align:center;
+    text-decoration:underline;
+    text-decoration:overline;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
