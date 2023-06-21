@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>애벌레</title>
+    <style>
+      .container {
+        width: 500px;
+        height: 300px;
+        border: 1px solid black;
+        position: relative;
+      }
+      .circle {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        border-radius: 50%;
+      }
+      .circle1 {
+        background-color: blue;
+        top: 100px;
+        left: 150px;
+      }
+      .circle2 {
+        background-color: rgb(70, 70, 250);
+        top: 140px;
+        left: 200px;
+        z-index: 7;
+      }
+      .circle3 {
+        background-color: rgb(121, 121, 248);
+        top: 160px;
+        left: 230px;
+        z-index: 8;
+      }
+      .circle4 {
+        background-color: rgb(170, 170, 249);
+        top: 210px;
+        left: 270px;
+        z-index: 10;
+      }
+      .circle5 {
+        background-color: rgb(230, 230, 250);
+        top: 230px;
+        left: 320px;
+        z-index: 15;
+      }
+      .eye {
+        position: absolute;
+        border-radius: 50%;
+      }
+      .eye1 {
+        background-color: white;
+        top: 110px;
+        left: 160px;
+        height: 30px;
+        width: 30px;
+        z-index: 15;
+      }
+      .eye2 {
+        background-color: black;
+        top: 115px;
+        left: 160px;
+        height: 20px;
+        width: 20px;
+        z-index: 18;
+      }
+      #grass {
+        position: absolute;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle circle1"></div>
+      <div class="circle circle2"></div>
+      <div class="circle circle3"></div>
+      <div class="circle circle4"></div>
+      <div class="circle circle5"></div>
+      <div class="eye eye1"></div>
+      <div class="eye eye2"></div>
+      <img id="grass" src="./img/grass.png" />
+    </div>
+  </body>
+</html>
