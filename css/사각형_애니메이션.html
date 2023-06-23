@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>사각형_애니메이션</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        box-sizing: border-box;
+        background-color: aqua;
+        border: 1px solid black;
+        cursor: pointer;
+        transition: all 2s ease;
+      }
+
+      body {
+        perspective: 500px;
+      }
+
+      .box1:hover {
+        /* transform: translatex(50px) scaleX(2); */
+        width: 200px;
+        transform: scaleX(100px);
+      }
+      .box2:hover {
+        transform: skewX(-45deg) translateX(50px);
+      }
+      .box3:hover {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: red;
+        transform: translateX(200px) rotate(360deg);
+      }
+      .box4:hover {
+        background-color: yellow;
+        transform: translateY(50px) scale(1.5) rotateY(360deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1 box"></div>
+    <div class="box2 box"></div>
+    <div class="box3 box"></div>
+    <div class="box4 box"></div>
+  </body>
+</html>
