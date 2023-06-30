@@ -72,12 +72,12 @@ body{
 .container .item:nth-child(7){
     background-color: pink;
     /* align-self: stretch; (default) */
-    align-self: flex-start;
-    align-self: flex-end;
-    align-self: center;
+    /* align-self: flex-start; */
+    /* align-self: flex-end; */
+    /* align-self: center; */
 
     /* justify-self: stretch (default); */
-    justify-self: flex-start;
-    justify-self: flex-end;
+    /* justify-self: flex-start; */
+    /* justify-self: flex-end; */
     justify-self: center;
 }
