@@ -2,7 +2,7 @@
  function 함수 이름(매개변수){
     함수 내용;
  }
- 함수이름은 cameCase를 이용!
+ 함수이름은 camelCase를 이용!
 */
 // 함수 선언문
 helloWorld1();

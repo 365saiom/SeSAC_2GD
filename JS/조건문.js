@@ -105,14 +105,14 @@ if (5 < 3) {
 //         break;
 // }
 
-let a = 4;
+let a = 3;
 switch(a){
     case 3:
         console.log("입력값이 4보다 작습니다.");
         break;
     case 4:
         console.log("입력값이 4입니다!");
-        // break;
+        break;
     case 5:
         console.log("a는 4보다 큽니다!");
         break;
