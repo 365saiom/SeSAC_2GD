@@ -49,7 +49,7 @@ let msg="Wow~ it is so amazing!!!";
 /* replace replaceAll */
 console.log(msg.replace("o","a"));
 console.log(msg.replaceAll("Wow", "ooo"));
-console.log(msg.replace("Wow, hey"));
+console.log(msg.replace("Wow", "hey"));
 console.log(msg); // 문자열은 변하지 않아요!
 
 let date = "2023.07.03";
