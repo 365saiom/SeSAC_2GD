@@ -19,7 +19,7 @@ console.log(document.getElementsByTagName("div")[5]);
 console.log(document.getElementsByName("id"));
 
 // querySelector
-/* CSS에서 사용했던 선택자를 이용ㅇ해서 요소 선택!
+/* CSS에서 사용했던 선택자를 이용해서 요소 선택!
 선택자와 일치하는 첫번째 요소를 반환 */
 console.log(document.querySelector(".pink"));
 console.log(document.querySelector(".others"));

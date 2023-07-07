@@ -205,7 +205,7 @@ const areaNum = {
     // areaNum.Seoul
     // areaNum["Seoul"] -> 대괄호 접근법을 이용해서 value에 접근
 
-    console.log(areaNum[area]);
+    
   }
 
 
