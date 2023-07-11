@@ -66,11 +66,24 @@
 
     <script>
       const lis = document.querySelectorAll("li");
+
+      // toggle 사용
       for (let li of lis) {
         console.log(li);
         li.classList.toggle("todo");
         li.classList.toggle("done");
       }
+
+      // if문 사용
+      /*  for (let li of lis) {
+        if (li.classList.contains("todo")) {
+          li.classList.remove("todo");
+          li.classList.add("done");
+        } else {
+          li.classList.remove("done");
+          li.classList.add("todo");
+        }
+      } */
     </script>
   </body>
 </html>

@@ -38,17 +38,17 @@ pooh.alt = "푸 사진입니다!!!!";
 const h1 = document.querySelector("h1");
 const list = document.querySelectorAll("li");
 // 3-1. style 속성 사용
-// for (let li of list) {
-//   console.log(li);
-//   li.style.backgroundColor = "pink";
-//   li.style.color = "#fff";
-//   li.style.fontSize = "1.3rem";
-// }
+for (let li of list) {
+  console.log(li);
+  li.style.backgroundColor = "pink";
+  li.style.color = "#fff";
+  li.style.fontSize = "1.3rem";
+}
 
 // 3-2. classList 사용
 console.log(h1.classList);
 
-h1.classList.add("add-h1");
+
 // h1.classList.remove("add-h1");
 console.log(h1.classList.contains("add-h1"));
 
@@ -57,14 +57,16 @@ console.log(h1.classList.contains("add-h1"));
 } else {
     h1.classList.add("add-h1");
 }
-
+console.log(h1.classList.contains("add-h1"));
+ */
 h1.classList.toggle("add-h1");
-*/
-// li 태그(4개)에 friends 클래스 추가해보기
-for (let el of list) {
-  el.classList.add("friends");
-}
 
+console.log(h1.classList.contains("add-h1"));
+
+// li 태그(4개)에 friends 클래스 추가해보기
+// for (let el of list) {
+//   el.classList.add("friends");
+// }
 /* 4. 요소 생성, 추가, 삭제, 접근 */
 // 4-0. 요소에 접근하기
 const friends = document.getElementById("friends");
@@ -122,7 +124,7 @@ const p5 = document.createElement("p");
 p5.innerText = "p5";
 p5.classList.add("p-3");
 
-// container.append(p4, p5, "안녕하세요");
+container.append(p4, p5, "안녕하세요");
 // container.appendChild(p4, p5);
 
 // 실습!
@@ -141,7 +143,7 @@ container.append(div);
 // remove, removeChild
 const firstLi = document.querySelector("li");
 // const friends = document.getElementById("friends");
-// console.log(firstLi);
+console.log(firstLi);
 
 // firstLi.remove();
-friends.removeChild(firstLi);
+// friends.removeChild(firstLi);
