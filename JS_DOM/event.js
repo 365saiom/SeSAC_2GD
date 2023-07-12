@@ -58,12 +58,12 @@ btn.addEventListener("click", function (event) {
 });
 
 input.addEventListener("keydown", function (event) {
-  console.log(event.key);
+  // console.log(event.key);
   console.log(event.code);
 
   // 방향키 위 아래 왼쪽 오른쪽을 누르면
   // 각각 누를 때마다 "up", "down", "left", "right"
- /*  if (event.key === "ArrowUp") {
+  if (event.key === "ArrowUp") {
     console.log("up");
   } else if (event.key === "ArrowDown") {
     console.log("down");
@@ -73,7 +73,7 @@ input.addEventListener("keydown", function (event) {
     console.log("right");
   } else {
     console.log("others");
-  } */
+  }
 });
 
 // 변경 이벤트
