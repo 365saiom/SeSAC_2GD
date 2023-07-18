@@ -16,7 +16,8 @@ ScrollTrigger.create({
   trigger: "main",
   markers: true,
   start: "top top",
+  end: "+=4000", //스크롤 길이 설정
   pin: true,
   scrub: 2,
-  end: "+=4000", //스크롤 길이 설정
 });
+

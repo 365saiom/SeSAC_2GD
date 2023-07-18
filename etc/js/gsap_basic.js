@@ -6,7 +6,7 @@ gsap.from(".circle1", {
     rotation: 180,
     scale: 2,
     repeat: 3, // animation을 3회 추가하는 것
-    yoyo: true,
+    yoyo: true, //반복 여부 
     ease: "linear",
     ease: "bounce.inOut",
     ease: "power1.out",
@@ -19,8 +19,8 @@ gsap.from(".circle1", {
     ease: "elastic",
     duration: 3,
     scale: 0.5,
-    stagger: 1.5,
-    repeat: -1,
+    stagger: 1.5, // 여러 개의 개체가 같은 모션을 순차적으로 실행시킬 때 사용
+    repeat: -1,  // 반복 
   });
   
   staggerAll.forEach((circle) => {
@@ -40,7 +40,7 @@ gsap.from(".circle1", {
   let tl = gsap.timeline();
   
   // 따로 쓰기
-  /* tl.to(".skyblue", {
+  tl.to(".skyblue", {
     x: 400,
     duration: 2,
   });
@@ -53,48 +53,48 @@ gsap.from(".circle1", {
   tl.to(".yellow", {
     x: 600,
     duration: 3,
-  }); */
+  });
   
-  // 타임라인에 이어서 쓰기
-  /* tl.to(".skyblue", {
-    x: 400,
-    duration: 2,
-  })
-    .to(".gray", {
-      x: 500,
-      duration: 2,
-    })
-    .to(".yellow", {
-      x: 600,
-      duration: 3,
-    }); */
+//   // 타임라인에 이어서 쓰기
+//   tl.to(".skyblue", {
+//     x: 400,
+//     duration: 2,
+//   })
+//     .to(".gray", {
+//       x: 500,
+//       duration: 2,
+//     })
+//     .to(".yellow", {
+//       x: 600,
+//       duration: 3,
+//     });
   
-  tl.to(".skyblue", {
-    x: 400,
-    duration: 2,
-  })
-    .to(
-      ".gray",
-      {
-        x: 500,
-        duration: 4,
-      },
-      "<"
-    )
-    .to(
-      ".yellow",
-      {
-        x: 600,
-        duration: 3,
-      },
-      "+=5"
-    );
+  // tl.to(".skyblue", {
+  //   x: 400,
+  //   duration: 2,
+  // })
+  //   .to(
+  //     ".gray",
+  //     {
+  //       x: 500,
+  //       duration: 4,
+  //     },
+  //     "<"
+  //   )
+  //   .to(
+  //     ".yellow",
+  //     {
+  //       x: 600,
+  //       duration: 3,
+  //     },
+  //     "+=5"
+  //   );
 
- /* 
-   to/from의 세번째 매개변수
-     -2(숫자) : 전체 타임라인에 대해서 ~초 뒤에 시작한다는 의미
-            (absolutely)
-     - "<" : 이전 움직임과 동시에 시작
-     - "+-2" : 마지막에 끝난 움직임보다 ~초 뒤에 시작하겠다!
+//  /* 
+//    to/from의 세번째 매개변수
+//      -2(숫자) : 전체 타임라인에 대해서 ~초 뒤에 시작한다는 의미
+//             (absolutely)
+//      - "<" : 이전 움직임과 동시에 시작
+//      - "+-2" : 마지막에 끝난 움직임보다 ~초 뒤에 시작하겠다!
 
- */
+//  */

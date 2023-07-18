@@ -1,4 +1,4 @@
-// $('선택자')
+/* // $('선택자')
 // document.querySelector('선택자')
 
 console.log($("button"));
@@ -19,4 +19,4 @@ function submitjq() {
   // border: 3px dotted blue;
   $(".div1").html("<i>잘 지내세요 여러분..😢</i>");
   $(".div1").css("border", "3px dotted blue");
-}
+} */

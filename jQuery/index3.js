@@ -32,7 +32,7 @@ for (let i = 0; i < nums.length; i++) {
 }
 
 // mouseover
-/* $(".numbers").on("mouseover", () => {
+$(".numbers").on("mouseover", () => {
   $(".numbers").css("background-color", "skyblue");
   $(".numbers").append("<div>mouseover 로 추가된 자식</div>");
 });
@@ -40,7 +40,7 @@ for (let i = 0; i < nums.length; i++) {
 $(".numbers").mouseover(() => {
   $(".numbers").css("background-color", "pink");
   $(".numbers").append("<div>mouseover 로 추가된 자식</div>");
-}); */
+});
 // hover() : 마우스를 올렸을 때와 떼었을 때 정의
 // js에서는 없는 동작
 $(".div-hover").hover(
@@ -64,7 +64,7 @@ $(window).scroll(() => {
 /* key event */
 // keydown : 키보드가 눌렸을 때!
 $(".input-key").keydown(function (e) {
-  //   console.log(e);
+    console.log(e);
   //   console.log(e.code);
   if (e.code === "ArrowUp") {
     console.log("up");

@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>슬라이더 만들기</title>
-    <!-- swiper cdn -->
+    <!-- swiper CSS CDN -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <!-- swiper JS cdn -->
+    <!-- swiper JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <style>
       .swiper {
@@ -33,7 +33,7 @@
         height: 10px;
         background-color: green;
         border: 1px solid black;
-        opacity: 1;
+        opacity: 0.5;
       }
       .swiper-pagination-bullet-active {
         transition: width 0.5s;
@@ -45,12 +45,11 @@
 
       /* 화살표 커스텀 */
       .swiper1 .swiper-button-prev,
-      .swiper1 .swiper-button.next {
+      .swiper1 .swiper-button-next {
         color: #555;
       }
 
       section {
-        background-color: red;
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 1rem;
@@ -73,17 +72,18 @@
         <div class="swiper-slide">Slide 8</div>
         <div class="swiper-slide">Slide 9</div>
       </div>
-      <!-- If we need pagination 선택사항: 단추를 선택해서 해당 버튼으로 넘어가게 한다.-->
+      <!-- 선택사항 -->
+      <!-- If we need pagination -->
       <div class="swiper-pagination"></div>
 
-      <!-- If we need navigation buttons 선택사항:화살표-->
+      <!-- If we need navigation buttons -->
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
 
-      <!-- If we need scrollbar 선택사항:스크롤바-->
+      <!-- If we need scrollbar -->
       <div class="swiper-scrollbar"></div>
     </div>
-
+    <br />
     <section>
       <div class="swiper swiper2">
         <div class="swiper-wrapper">
@@ -102,11 +102,12 @@
 
     <script>
       const sw = new Swiper(".swiper1", {
-        slidesPerView: 3, //화면에 보이는 슬라이드 갯수
-        spaceBetween: 6, //slid 간의 gap(margin)
-        loop: true, // 화살표가 진하게 된다.
+        // direction: "vertical",
+        slidesPerView: 3,
+        spaceBetween: 6, //slide 간의 gap (margin)
+        loop: true,
         autoplay: {
-          display: 1000,
+          delay: 1000,
         },
         speed: 1000, //like transition
 
@@ -131,16 +132,14 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        // 반응형
+        breakpoints: {
+          // 768 보다 클 때
+          768: {
+            slidesPerView: 4,
+          },
+        },
       };
-
-      // 반응형
-      breakpoints: {
-        // 768 보다 클 때
-        768{
-          slidesPerView:4,
-        }
-      }
-
       const sw2 = new Swiper(".swiper2", setSwiper2);
     </script>
   </body>
